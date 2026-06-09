@@ -9,9 +9,8 @@ All notable changes to TypeBridge will be documented in this file.
 - **TypeDB 3.11 support** — upgraded the pinned driver to `typedb-driver==3.11.5` and the
   integration/CI server image to `typedb/typedb:3.11.5`. TypeDB 3.11 servers reject drivers
   older than 3.11.0, so this is a coordinated runtime bump.
-- **Driver API updates** — `create_driver_options()` now builds `DriverOptions` from an explicit
-  `DriverTlsConfig` (the boolean `is_tls_enabled` constructor argument was removed in 3.11), and
-  `TypeDB.driver()` call sites use the renamed `addresses` parameter.
+- **`TypeDB.driver()` parameter rename** — call sites use the renamed `addresses` parameter
+  (was `address` in 3.10).
 
 ## [1.4.5] - 2026-05-21
 
