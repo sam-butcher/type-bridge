@@ -4,6 +4,14 @@ All notable changes to TypeBridge will be documented in this file.
 
 ## [Unreleased]
 
+### Compatibility
+
+- **TypeDB 3.11 support** — upgraded the pinned driver to `typedb-driver==3.11.5` and the
+  integration/CI server image to `typedb/typedb:3.11.5`. TypeDB 3.11 servers reject drivers
+  older than 3.11.0, so this is a coordinated runtime bump.
+- **`TypeDB.driver()` parameter rename** — call sites use the renamed `addresses` parameter
+  (was `address` in 3.10).
+
 ## [1.4.5] - 2026-05-21
 
 ### Bug Fixes

@@ -57,7 +57,7 @@ class TypeDB:
     DEFAULT_ADDRESS: str
     @staticmethod
     def driver(
-        address: str,
+        addresses: str,
         credentials: Credentials | None = ...,
         driver_options: DriverOptions | None = ...,
     ) -> Driver: ...
